@@ -1,0 +1,46 @@
+ul {
+    list-style-type: none;
+}
+
+.container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr max-content;
+    gap: 50px
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card img {
+    width: 100%;
+}
+
+
+.placeholder {
+    background-color: grey;
+}
+
+.nft {
+    background-color: red;
+}
+
+.last-nft-card {
+    background-color: aqua;
+}
+
+.visible {
+    display: block;
+}
+
+.not-visible {
+    display: none;
+}

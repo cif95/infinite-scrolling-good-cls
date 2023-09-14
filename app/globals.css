@@ -1,0 +1,38 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+main {
+/*   height: calc(100% - 160px);
+ */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header,
+footer {
+  height: 80px;
+  padding: 20px;
+  background-color: #362e6b;
+  color: white;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
