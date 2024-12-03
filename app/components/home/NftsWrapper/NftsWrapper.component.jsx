@@ -64,8 +64,10 @@ export const NftsWrapper = ({setHasScrolled}) => {
     const loadNewPage = useCallback(() => {
 
         setIsLoading(true);
+        
         // fetch the other page from server here.
         const newNfts = [...mock_nfts];
+
         setTimeout(() => {
             setNfts( prev => [...prev, ...newNfts]);
             setIsLoading(false);
@@ -106,7 +108,7 @@ export const NftsWrapper = ({setHasScrolled}) => {
                             </li>
                         )
                     }
-                    return <NftCard key={index} nft={nft} />
+                    return <NftCard key={index} nft={nft} index={index} />
                 })}
 
                 {isLoading && placeHolders.map((card, index ) => (

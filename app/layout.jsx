@@ -6,8 +6,6 @@ import { Inter } from 'next/font/google';
 
 import { HeaderBox } from './components/UI/Header/Header.component';
 
-import StyledJsxRegistry from './registry'
-
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -20,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <HeaderBox />
-        <StyledJsxRegistry>{children}</StyledJsxRegistry>
+        {children}
         </body>
     </html>
   )
